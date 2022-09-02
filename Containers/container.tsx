@@ -22,9 +22,7 @@ const Container:NextPage = (props:any) => {
                 minHeight: '100vh',
             }}
         >
-            <Sider className={styles.sidebar} collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
-             <Menu style={{margin:20}}>  </Menu>
-            </Sider>
+
             <Layout className="site-layout">
                 <Header
                     className={styles.antLayoutHeader}
@@ -54,7 +52,7 @@ const Container:NextPage = (props:any) => {
                             minHeight: 360,
                         }}
                     >
-                        Bill is a cat.
+                        {props.children}
                     </div>
                 </Content>
             </Layout>
